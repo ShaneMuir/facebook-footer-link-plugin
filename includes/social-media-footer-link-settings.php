@@ -2,7 +2,7 @@
 /**
  * Register settings page for the plugin
  *
- * @package facebook-footer-link
+ * @package social-media-footer-link
  */
 
 /**
@@ -12,8 +12,8 @@
  */
 function ffl_options_menu_link(): void {
 	add_options_page(
-		'Facebook Footer Link Options',
-		'Facebook Footer Link',
+		'Social Media Footer Link Options',
+		'Social Footer Link',
 		'manage_options',
 		'ffl-options',
 		'ffl_options_content'
@@ -32,8 +32,8 @@ function ffl_options_content(): void {
 
 	ob_start(); ?>
 		<div class="wrap">
-			<h2><?php esc_attr_e( 'Facebook Footer Link Settings', 'ffl_domain' ); ?></h2>
-			<p><?php esc_attr_e( 'Settings for the Facebook Footer Link plugin', 'ffl_domain' ); ?></p>
+			<h2><?php esc_attr_e( 'Social Media Footer Link Settings', 'ffl_domain' ); ?></h2>
+			<p><?php esc_attr_e( 'Settings for the Social Media Footer Link plugin', 'ffl_domain' ); ?></p>
 			<form method="post" action="options.php">
 				<?php settings_fields( 'ffl_settings_group' ); ?>
 				<table class="form-table">

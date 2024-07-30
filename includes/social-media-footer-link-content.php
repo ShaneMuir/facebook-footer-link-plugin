@@ -1,16 +1,16 @@
 <?php
 /**
- * This file is responsible for appending the Facebook
+ * This file is responsible for appending the Social media
  * footer link to posts.
  *
- * @package facebook-footer-link
+ * @package social-media-footer-link
  */
 
 /**
- * Add Facebook footer link to posts.
+ * Add Social Media footer link to posts.
  *
  * @param  string $content The content of the post.
- * @return string The modified content with the Facebook footer link appended.
+ * @return string The modified content with the Social media footer link appended.
  */
 function ffl_add_footer( string $content ): string {
 
